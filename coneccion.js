@@ -5,7 +5,7 @@ const taskList = document.getElementById('taskList')
 taskForm.addEventListener('submit', (e) => {
     e.preventDefault();
     const task = taskInput.value;
-    fetch('http://localhost:3000/tasks', {
+    fetch('https://tap-lucio-2.onrender.com/tasks', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -20,7 +20,7 @@ taskForm.addEventListener('submit', (e) => {
 })
 
 function getTasks() {
-    fetch('http://localhost:3000/tasks')
+    fetch('https://tap-lucio-2.onrender.com/tasks')
     .then(res => res.json())
     .then(data => {
         taskList.innerHTML = ''
@@ -34,7 +34,7 @@ function getTasks() {
 }
 
 const deleteAllTasks = () => {
-     fetch('http://localhost:3000/tasks', {
+     fetch('https://tap-lucio-2.onrender.com/tasks', {
           method: 'DELETE'
      })
      .then(() => {
