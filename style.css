@@ -1,0 +1,31 @@
+        /* Estilos personalizados */
+        body {
+            /* background-color: rgb(179, 175, 170); */
+            background-image: url(./walter-white-y-jesse-pinkman-de-breaking-bad_2560x1440_xtrafondos.com.jpg);
+            background-size: 100%;
+            padding-top: 20px;
+        }
+        h1{
+            color: #f8f9fa;
+        }
+        .task-form {
+            margin-bottom: 20px;
+        }
+
+        .task-list {
+            padding-left: 0;
+            list-style: none;
+        }
+
+        .task-list li {
+            margin-bottom: 10px;
+            background-color: #f8f9fa;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .colorBoton:hover{
+            background: rgb(105, 14, 14) ;
+            color: #f8f9fa;
+            cursor: pointer;
+        }
